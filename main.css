@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: #eee;
+}
+
+.app-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.player {
+  background-color: white;
+  padding: 100px 50px;
+  width: 450px;
+  max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.11);
+}
+
+.song-img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  background-color: blue;
+  width: 200px;
+
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  margin-bottom: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./assets/album-photos/song-1.jpeg");
+}
+.song-img:after {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+
+.song-img::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+}
+
+.song-details {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.song-details h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(85, 85, 85);
+}
+
+.song-details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #888;
+}
+.player-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.player-controls .play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #fe4990;
+  color: white;
+  margin: 0px 30px;
+
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+
+  box-shadow: 0px 6px 12px rgba(254, 72, 128, 0.6);
+
+  transition: 0.4s;
+}
+.player-controls .play-btn:hover {
+  box-shadow: 0px 8px 16px rgba(254, 72, 128, 0.8);
+}
+
+.player-controls .skip-btn {
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+
+  cursor: pointer;
+
+  color: #ccc;
+  transition: 0.4s;
+}
+.player-controls .skip-btn:hover {
+  color: #888;
+}
+.next-up p {
+  color: #888;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.next-up p span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+@media (max-width: 414px) {
+  .player {
+    min-height: 100vh;
+    border-radius: 0px;
+    padding: 75px 30px;
+  }
+}
