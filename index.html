@@ -11,25 +11,21 @@
   <body>
     <div class="app-wrapper">
       <div class="player">
-        <div class="song-img"></div>
+        <audio id="music-player"></audio>
+        <div id="song-image" class="song-img"></div>
         <div class="song-details">
-          <h2>Forget Me too ft. halsey</h2>
-          <h3>Chainsmokers</h3>
+          <h2 id="song-title">Forget Me too ft. halsey</h2>
+          <h3 id="song-artist">Chainsmokers</h3>
         </div>
         <div class="player-controls">
-          <button class="skip-btn skip-back">
-            <i class="fa-solid fa-backward fa-lg"></i>
-          </button>
-          <button class="play-btn"><i class="fa-solid fa-play fa-2x"></i></button>
-          <button class="skip-btn skip-next">
-            <i class="fa-solid fa-forward fa-lg"></i>
-          </button>
+          <button id="prev-btn" class="skip-btn"><i class="fa-solid fa-backward fa-lg"></i></button>
+          <button id="play-btn" class="play-btn"><i id="play-icon" class="fa-solid fa-play fa-2x"></i> </button>
+          <button id="next-btn" class="skip-btn"><i class="fa-solid fa-forward fa-lg"></i></button>
         </div>
         <div class="next-up">
-          <p>Next up: <span>Forever Young</span></p>
+          <p>Next up: <span id="song-next-up">Forever Young</span></p>
         </div>
       </div>
-      
     </div>
   </body>
 </html>
