@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: #343538;
 }
 
 .app-wrapper {
@@ -17,7 +17,45 @@ body {
 }
 
 .player {
-  background-color: white;
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    circle at 50% 50%,
+    rgba(5, 82, 91, 1) 0%,
+    rgba(19, 21, 27, 1) 99%,
+    rgba(255, 255, 0, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-radial-gradient(
+    circle at 50% 50%,
+    rgba(5, 82, 91, 1) 0%,
+    rgba(19, 21, 27, 1) 99%,
+    rgba(255, 255, 0, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-radial-gradient(
+    circle at 50% 50%,
+    rgba(5, 82, 91, 1) 0%,
+    rgba(19, 21, 27, 1) 99%,
+    rgba(255, 255, 0, 1) 100%
+  );
+
+  /* ie 10+ */
+  background: -ms-radial-gradient(
+    circle at 50% 50%,
+    rgba(5, 82, 91, 1) 0%,
+    rgba(19, 21, 27, 1) 99%,
+    rgba(255, 255, 0, 1) 100%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(5, 82, 91, 1) 0%,
+    rgba(19, 21, 27, 1) 99%,
+    rgba(255, 255, 0, 1) 100%
+  );
   padding: 100px 50px;
   width: 450px;
   max-width: 100%;
@@ -66,13 +104,14 @@ body {
 .song-details h2 {
   font-size: 24px;
   font-weight: 600;
-  color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
 }
 
 .song-details h3 {
+  margin-top: 5px;
   font-size: 16px;
   font-weight: 500;
-  color: #888;
+  color: rgb(195, 195, 195);
 }
 .player-controls {
   display: flex;
@@ -89,7 +128,47 @@ body {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background-color: #fe4990;
+  background: -moz-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A8FFFF', endColorstr='#05525B', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
   color: white;
   margin: 0px 30px;
 
@@ -98,12 +177,52 @@ body {
   appearance: none;
   cursor: pointer;
 
-  box-shadow: 0px 6px 12px rgba(254, 72, 128, 0.6);
+  background: -moz-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A8FFFF', endColorstr='#05525B', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    151deg,
+    rgba(5, 82, 91, 1) 26%,
+    rgba(8, 152, 168, 1) 68%,
+    rgba(168, 255, 255, 1) 100%
+  );
 
   transition: 0.4s;
 }
 .player-controls .play-btn:hover {
-  box-shadow: 0px 8px 16px rgba(254, 72, 128, 0.8);
+  box-shadow: 0px 8px 16px rgba(34, 136, 177, 0.8);
 }
 
 .player-controls .skip-btn {
@@ -114,14 +233,14 @@ body {
 
   cursor: pointer;
 
-  color: #ccc;
+  color: rgb(231, 231, 231);
   transition: 0.4s;
 }
 .player-controls .skip-btn:hover {
   color: #888;
 }
 .next-up p {
-  color: #888;
+  color: rgb(209, 209, 209);
   text-align: center;
   font-weight: 500;
   font-size: 16px;
