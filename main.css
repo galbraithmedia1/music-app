@@ -7,6 +7,7 @@
 
 body {
   /* background-color: #113399; */
+  height: 100vh;
 }
 
 .cool {
@@ -64,50 +65,31 @@ body {
 }
 
 .player {
-  /* ff 3.6+ */
-  background: -moz-radial-gradient(
-    circle at 50% 50%,
-    rgba(5, 82, 91, 1) 0%,
-    rgba(19, 21, 27, 1) 99%,
-    rgba(255, 255, 0, 1) 100%
+  background: linear-gradient(
+    -45deg,
+    #0e5e61e7,
+    #1d1b77d5,
+    #401472d8,
+    #470f30dc
   );
-
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-radial-gradient(
-    circle at 50% 50%,
-    rgba(5, 82, 91, 1) 0%,
-    rgba(19, 21, 27, 1) 99%,
-    rgba(255, 255, 0, 1) 100%
-  );
-
-  /* opera 11.10+ */
-  background: -o-radial-gradient(
-    circle at 50% 50%,
-    rgba(5, 82, 91, 1) 0%,
-    rgba(19, 21, 27, 1) 99%,
-    rgba(255, 255, 0, 1) 100%
-  );
-
-  /* ie 10+ */
-  background: -ms-radial-gradient(
-    circle at 50% 50%,
-    rgba(5, 82, 91, 1) 0%,
-    rgba(19, 21, 27, 1) 99%,
-    rgba(255, 255, 0, 1) 100%
-  );
-
-  /* global 92%+ browsers support */
-  background: radial-gradient(
-    circle at 50% 50%,
-    rgba(5, 82, 91, 1) 0%,
-    rgba(19, 21, 27, 1) 99%,
-    rgba(255, 255, 0, 1) 100%
-  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   padding: 100px 50px;
   width: 450px;
   max-width: 100%;
   border-radius: 16px;
   box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.11);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .song-img {
@@ -175,47 +157,15 @@ body {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  background: -moz-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* opera 11.10+ */
-  background: -o-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A8FFFF', endColorstr='#05525B', GradientType=1 );
-
-  /* ie 10+ */
-  background: -ms-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* global 94%+ browsers support */
   background: linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
+    -45deg,
+    #18969be7,
+    #2a28add5,
+    #621fafd8,
+    #901f61dc
   );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   color: white;
   margin: 0px 30px;
 
@@ -224,47 +174,15 @@ body {
   appearance: none;
   cursor: pointer;
 
-  background: -moz-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* safari 5.1+,chrome 10+ */
-  background: -webkit-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* opera 11.10+ */
-  background: -o-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* ie 6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#A8FFFF', endColorstr='#05525B', GradientType=1 );
-
-  /* ie 10+ */
-  background: -ms-linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
-  );
-
-  /* global 94%+ browsers support */
   background: linear-gradient(
-    151deg,
-    rgba(5, 82, 91, 1) 26%,
-    rgba(8, 152, 168, 1) 68%,
-    rgba(168, 255, 255, 1) 100%
+    -45deg,
+    #127c80e7,
+    #2725a8d5,
+    #5e1ea7d8,
+    #8b1d5ddc
   );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 
   transition: 0.4s;
 }
@@ -288,11 +206,11 @@ body {
 }
 
 .progress-container {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.527);
   border-radius: 5px;
   cursor: pointer;
   margin: 10px 0;
-  height: 4px;
+  height: 5px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -302,7 +220,7 @@ body {
   /* ff 3.6+ */
   background: -moz-linear-gradient(
     90deg,
-    rgba(50, 105, 104, 1) 0%,
+    rgb(81, 177, 175) 0%,
     rgba(23, 157, 188, 1) 100%
   );
 
@@ -310,7 +228,7 @@ body {
   background: -webkit-linear-gradient(
     90deg,
     rgba(50, 105, 104, 1) 0%,
-    rgba(23, 157, 188, 1) 100%
+    rgb(30, 185, 219) 100%
   );
 
   /* opera 11.10+ */
@@ -326,15 +244,15 @@ body {
   /* ie 10+ */
   background: -ms-linear-gradient(
     90deg,
-    rgba(50, 105, 104, 1) 0%,
-    rgba(23, 157, 188, 1) 100%
+    rgb(82, 172, 170) 0%,
+    rgb(40, 215, 255) 100%
   );
 
   /* global 94%+ browsers support */
   background: linear-gradient(
     90deg,
-    rgba(50, 105, 104, 1) 0%,
-    rgba(23, 157, 188, 1) 100%
+    rgb(100, 212, 211) 0%,
+    rgb(11, 189, 230) 100%
   );
   border-radius: 5px;
   height: 100%;
