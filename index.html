@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./assets/icons/css/all.min.css" />
     <link rel="stylesheet" href="./main.css" />
   </head>
+
+
   <body>
+    <div class="cool" id="particles-js">
     <div class="app-wrapper">
       <div class="player">
         <audio id="music-player"></audio>
@@ -22,11 +25,15 @@
           <button id="play-btn" class="play-btn"><i id="play-icon" class="fa-solid fa-play fa-2x"></i> </button>
           <button id="next-btn" class="skip-btn"><i class="fa-solid fa-forward fa-lg"></i></button>
         </div>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
         <div class="next-up">
           <p>Next up: <span id="song-next-up">Forever Young</span></p>
         </div>
       </div>
     </div>
+  </div>
     <script src="./main.js"></script>
        
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 

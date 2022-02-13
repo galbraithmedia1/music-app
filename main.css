@@ -6,10 +6,57 @@
 }
 
 body {
-  background-color: #343538;
+  /* background-color: #113399; */
+}
+
+.cool {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    181deg,
+    rgba(39, 37, 85, 1) 0%,
+    rgba(38, 2, 2, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    181deg,
+    rgba(39, 37, 85, 1) 0%,
+    rgba(38, 2, 2, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    181deg,
+    rgba(39, 37, 85, 1) 0%,
+    rgba(38, 2, 2, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#260202', endColorstr='#272555', GradientType=1 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    181deg,
+    rgba(39, 37, 85, 1) 0%,
+    rgba(38, 2, 2, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    181deg,
+    rgba(39, 37, 85, 1) 0%,
+    rgba(38, 2, 2, 1) 100%
+  );
 }
 
 .app-wrapper {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -239,6 +286,62 @@ body {
 .player-controls .skip-btn:hover {
   color: #888;
 }
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.progress {
+  /* ff 3.6+ */
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(50, 105, 104, 1) 0%,
+    rgba(23, 157, 188, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(50, 105, 104, 1) 0%,
+    rgba(23, 157, 188, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    90deg,
+    rgba(50, 105, 104, 1) 0%,
+    rgba(23, 157, 188, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#179DBC', endColorstr='#326968', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    90deg,
+    rgba(50, 105, 104, 1) 0%,
+    rgba(23, 157, 188, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    90deg,
+    rgba(50, 105, 104, 1) 0%,
+    rgba(23, 157, 188, 1) 100%
+  );
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
 .next-up p {
   color: rgb(209, 209, 209);
   text-align: center;
