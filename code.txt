@@ -1,0 +1,27 @@
+background: linear-gradient(
+    -45deg,
+    #0e5e61e7,
+    #1d1b77d5,
+    #401472d8,
+    #470f30dc
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+
+  /* width: 450px; */
+  /* max-width: 100%;
+  border-radius: 16px;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.11); */
+  justify-content: center;
+  align-items: center;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
