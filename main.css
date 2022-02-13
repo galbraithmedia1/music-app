@@ -29,7 +29,7 @@ body {
   position: relative;
   display: block;
   margin: 0 auto;
-  background-color: blue;
+  /* background-color: blue; */
   width: 200px;
 
   border-radius: 50%;
