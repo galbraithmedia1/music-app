@@ -64,6 +64,29 @@ body {
   min-height: 100vh;
 }
 
+.navbar {
+  display: flex;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+}
+.navbar i {
+  cursor: pointer;
+}
+.back-btn {
+  background-color: none;
+  padding: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  appearance: none;
+
+  cursor: pointer;
+  color: white;
+}
+
 .player {
   background: linear-gradient(
     -45deg,
@@ -74,7 +97,7 @@ body {
   );
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  padding: 100px 50px;
+  padding: 50px 40px;
   width: 450px;
   max-width: 100%;
   border-radius: 16px;

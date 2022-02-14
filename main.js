@@ -8,8 +8,8 @@ window.onload = () => {
   const play_btn_icon = document.querySelector("#play-icon");
   const prev_btn = document.querySelector("#prev-btn");
   const next_btn = document.querySelector("#next-btn");
-  const progress = document.querySelector('#progress')
-  const progressContainer = document.querySelector('#progress-container')
+  const progress = document.querySelector("#progress");
+  const progressContainer = document.querySelector("#progress-container");
 
   const audio_player = document.querySelector("#music-player");
 
@@ -150,26 +150,20 @@ window.onload = () => {
   }
 
   function updateProgress(e) {
-    const {duration, currentTime} = e.srcElement 
-    const progressPercent = (currentTime /duration) * 100
-    progress.style.width = `${progressPercent}%`
-    console.log(progressPercent)
-
+    const { duration, currentTime } = e.srcElement;
+    const progressPercent = (currentTime / duration) * 100;
+    progress.style.width = `${progressPercent}%`;
+    console.log(progressPercent);
   }
 
-  
+  function setProgress(e) {
+    const width = this.clientWidth;
+    const clickX = e.offsetX;
+    const duration = audio_player.duration;
 
-  function setProgress(e){
-      const width = this.clientWidth
-      const clickX = e.offsetX
-      const duration = audio_player.duration
-
-      audio_player.currentTime = (clickX/width) * duration
-
-
+    audio_player.currentTime = (clickX / width) * duration;
   }
 
-  audio_player.addEventListener('timeupdate', updateProgress )
-  progressContainer.addEventListener("click", setProgress )
-
+  audio_player.addEventListener("timeupdate", updateProgress);
+  progressContainer.addEventListener("click", setProgress);
 };
